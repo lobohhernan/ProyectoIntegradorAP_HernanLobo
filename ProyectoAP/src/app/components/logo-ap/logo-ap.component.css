@@ -1,3 +1,77 @@
-#logoAP{
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  order: 1;
+  align-items:center;
+}
+
+#logoAP {
+    display: flex;
     width: 150px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  order: 3;
+}
+
+img {
+  width: 40px;
+  margin: 0px 10px 0px 10px;
+}
+
+.btn {
+  border-width: medium;
+}
+
+.ingresar {
+  margin-left: 10px;
+  order: 2;
+}
+
+/*-- Vista Celular --*/
+
+@media (max-width: 676px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row; /* Agregar esta regla para poner el botón a la derecha */
+    justify-content: center; /* Agregar esta regla para centrar los elementos */
+  }
+
+  #logoAP {
+    order: 1;
+  }
+
+  .ingresar {
+    order: 2;
+    margin-left: auto; /* Agregar esta regla para poner el botón a la derecha */
+    margin-right: 0; /* Agregar esta regla para quitar el margen derecho */
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
 }
